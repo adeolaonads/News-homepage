@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+    margin-inline: 4rem;
+    font-family: Inter;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    margin-inline: 0.5em;
+    color: #685b5b;
+    font-size: 1.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-auto-rows: 400px;
+    column-gap: 2rem;
+    ;
+    row-gap: 2rem;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+}
+
+.box:nth-child(1) {
+    min-height: 450px;
+    background-image: url(/assets/images/image-web-3-desktop.jpg);
+    background-size: cover;
+}
+
+.box:nth-child(3) {
+    margin-top: 3rem;
+    font-size: 4rem;
+    padding: .75rem;
+    color: #000;
+    background-color: #fff;
+}
+
+
+
+.box:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3rem;
+    background-color: #fff;
+    color: #000;
+}
+
+/* .box.box:nth-child(2) {
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+} */
+
+h2 {
+    color: #000;
+}
+
+button {
+
+    padding: 1rem;
+    width: 50%;
+    /* margin: 4rem auto; */
+
+}
+
+.grid-container .box:first-child {
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+}
+
+
+
+.grid-container .box:nth-child(2) {
+
+    grid-row: 1/3;
+
+
+}
+
+
+.grid-container .box:nth-child(3) {
+    grid-column: 1/2;
+}
+
+.grid-container .box:nth-child(4) {
+    grid-column: 2/4;
+
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+
+
+.sidebar-heading {
+    font: .5rem;
+    color: hsl(35, 77%, 62%);
+    margin-bottom: 1rem;
+}
+
+.sub-heading {
+    margin: 1rem auto;
+}
+
+.menu {
+    border-bottom: 2px solid red;
+}
+
+.menu p {
+    font-size: 1.2rem;
+
+
+
+}
+
+
+
+
+.menu p {
+    color: hsl(233, 8%, 79%);
+}
+
+
+
+.menu a:visited {
+    color: hsl(36, 100%, 99%)
+}
+
+
+.menu a h4:hover,
+.menu a h4:focus {
+    color: hsl(35, 77%, 62%);
+}
+
+.menu a h4:active {
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media screen and (min-width: 300px) {}
