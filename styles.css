@@ -18,7 +18,7 @@ body {
 
 .container {
     padding: 1rem 1rem;
-    margin: 1rem auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@ ul li {
 
 .banner img {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 
@@ -66,6 +66,7 @@ button {
     letter-spacing: .25em;
     text-transform: uppercase;
     font-size: .65rem;
+    cursor: pointer;
 }
 
 button:hover,
@@ -88,7 +89,8 @@ button:focus {
 }
 
 .section h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+
 }
 
 .section p {
@@ -96,7 +98,7 @@ button:focus {
 }
 
 .section2 p {
-    margin: 2rem 0;
+    margin: 1rem 0;
     color: #fff;
     padding: 1rem auto;
 
@@ -175,6 +177,10 @@ figure img {
     font-size: 60px;
 }
 
+.desktop-view {
+    display: none;
+}
+
 
 /* @media screen and (max-height: 450px) {
     .overlay a {
@@ -207,19 +213,80 @@ figure img {
 
     button {
         padding: .8em;
-        margin: 1rem auto;
+        margin: .5rem auto;
         font-size: .85rem;
     }
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
     nav #hamburger {
         display: none;
     }
 
-    nav #myNav {
+    /* nav #myNav {
         display: none;
     }
+
+    nav .menu-list .overlay-content .list-item {
+        display: inline-block;
+    } */
+
+    .desktop-view {
+        display: flex;
+    }
+
+    ul .list-item {
+        padding: 0 1em;
+        font-size: .75rem;
+    }
+
+
+
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        margin-bottom: 0;
+
+
+    }
+
+    .flex-item {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .section {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        justify-content: space-between;
+
+    }
+
+    .flex-min {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section2 {
+        margin-top: -0.1em;
+    }
+
+    .section h3 {
+        letter-spacing: .1ch;
+        word-spacing: .25rem;
+    }
+
+
 
 }
